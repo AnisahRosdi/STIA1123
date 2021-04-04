@@ -4,15 +4,21 @@ public class main {
 
 	public static void main(String[] args) {
 		
+		//create first new object
 		purse man = new purse();
-		man.material="Top Grain Calf Leather";
-		man.brand="Bonia";
-		System.out.println("Man Purse\n" + "Material:" +man.material +"\n"  + "Brand:" +man.brand );
+		man.printpurse("man","Top Grain Calf Leather", "Bonia",150.5);
+		man.calculateprice(150.5,2);
+		man.discount(0.15);
+		man.totalpayment(7);
+		System.out.println();
 		
+		//create second new object purse
 		purse woman = new purse();
-		woman.material="Premium Synthetic Leather";
-		woman.brand="Kita mini";
-		System.out.println("\nWoman Purse\n" + "Material:" +woman.material +"\n"  + "Brand:" +woman.brand );
+		woman.printpurse("woman","Premium Synthetic Leather","Kita Mini",100.5);
+		woman.calculateprice(100.5,3);
+		woman.discount(0.3);
+		woman.totalpayment(4);
+		System.out.println();
 		
 	}
 
