@@ -1,46 +1,30 @@
+import java.util.Scanner;
 
 public class correction {
 	String brand;
 	int amount;
-	double price,meter;
+	double price;
 	
-	//setter method
-	public void setbrand(String brand) {
-		this.brand = brand;
+	//constructor
+	Scanner input = new Scanner(System.in);
+	
+	//input
+	//correction a = new correction
+	correction(){
+		System.out.print("Enter brand of correction: ");
+		this.brand=input.nextLine();
+		
+		System.out.print("Enter amount of item: ");
+		this.amount=input.nextInt();
+		
+		System.out.print("Enter price: RM");
+		this.price=input.nextDouble();
 	}
 	
-	public void setamount(int amount) {
-		this.amount = amount;
+	correction(String b,int a,double p){
+		this.brand=b;
+		this.amount=a;
+		this.price=p;
 	}
-	
-	public void setprice(double price) {
-		this.price = price;
-	} 
-	
-	public void setmeter(double meter) {
-		this.meter =meter;
-	}
-	
-	//create Getter method
-		public String getbrand() {
-			return this.brand;
-		}
-		
-		public int getamount() {
-			return this.amount;
-		}
-		
-		public double getprice() {
-			return this.price;
-		}
-		
-		public double getmeter() {
-			return this.meter;
-		}
-		
-		//create a fullThrottle() method
-		public void fullthrottle() {
-			System.out.println("The correction tape can correct your typing mistake!");
-		}
 		
 }
