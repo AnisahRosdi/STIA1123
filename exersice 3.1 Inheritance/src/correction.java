@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class correction {
 	private String brand;
-	private int length;
+	private int length,price,amount;
 	
 	//constructor
 	Scanner input = new Scanner(System.in);
@@ -16,6 +16,11 @@ public class correction {
 		System.out.print("Enter length of correction(m): ");
 		this.length=input.nextInt();
 		
+		System.out.print("Enter price (RM): ");
+		this.price=input.nextInt();
+		
+		System.out.print("Enter amount of correction: ");
+		this.amount=input.nextInt();
 	}
 	
 	//getter method
@@ -25,6 +30,14 @@ public class correction {
 	
 	public int getLength() {
 		return this.length;
+	}
+	
+	public int getPrice() {
+		return this.price;
+	}
+	
+	public int getAmount() {
+		return this.amount;
 	}
 	
 }

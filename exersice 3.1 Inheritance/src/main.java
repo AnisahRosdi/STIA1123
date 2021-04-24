@@ -3,16 +3,13 @@ public class main {
 
 	public static void main(String[] args) {
 		correction a = new correction();
-		calculate b = new calculate();
+		calculate b = new calculate(0, 0);
 		
-		System.out.println("\n----------"+ a.getBrand()+ "----------");
-		System.out.println("\nLength of correction is "+ a.getLength());
-		System.out.printf("Price is RM" + "%.2f",b.getPrice());
-		System.out.println("\nAmount of correction is " + b.getAmount());
-		System.out.printf("Total Price is RM" + "%.2f",b.getTotalPrice());
-		
-		System.out.println("");
-		
+		System.out.println("\n------------"+ a.getBrand()+ "------------");
+		System.out.println("Length of correction is "+ a.getLength());
+		System.out.println("Price of one correcion is " + a.getPrice());
+		System.out.println("Amount of correction is " + a.getAmount());
+		System.out.println("Total payment is RM" + b.getTotalPayment());
 	}
 
 }
