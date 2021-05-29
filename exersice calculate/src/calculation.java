@@ -69,12 +69,12 @@ public class calculation {
 		AddButton.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		AddButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int num1,num2,answer;
+				double num1,num2,answer;
 				
 					num1 = Integer.parseInt(textFieldNum1.getText());
 					num2 = Integer.parseInt(textFieldNum2.getText());
 					answer = num1+num2;
-					textFieldAnswer.setText(Integer.toString(answer));
+					textFieldAnswer.setText(Double.toString(answer));
 				
 			}
 		});
@@ -84,12 +84,12 @@ public class calculation {
 		MinusButton = new JButton("Minus");
 		MinusButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int num1,num2,answer;
+				double num1,num2,answer;
 				
 				num1 = Integer.parseInt(textFieldNum1.getText());
 				num2 = Integer.parseInt(textFieldNum2.getText());
 				answer = num1-num2;
-				textFieldAnswer.setText(Integer.toString(answer));
+				textFieldAnswer.setText(Double.toString(answer));
 			}
 		});
 		MinusButton.setFont(new Font("Arial Black", Font.PLAIN, 13));
