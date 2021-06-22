@@ -1,23 +1,39 @@
 
-import java.util.Scanner;
-public abstract class finance extends rentalCar{ //1.3 User-defined class
+import java.util.*;
+public class finance extends rentalCar { // 2.1 extends from CompanyInfo 
+	                                                         // 2.5 Implements 
 
 		Scanner input = new Scanner(System.in);
 		
-		double small;
-		double MPV;
-		double profit;
+		private double totalSales;
+		private double totalSpend;
+		private double profit;
+		private String month;
 		
-		finance(double smallCar, double MPVCar) { // 1.4 Constructor with 2 arguments
+		
+		finance() { // 1.4 Constructor with no arguments
+			System.out.println("/t/t/tFinance");
 			
-			small = smallCar;
-			MPV = MPVCar;
+			System.out.print("Enter financial month: ");	
+			this.month = input.nextLine();
 			
-		System.out.println("Enter car that been rent and day:-" + "\nSmall Car :" + smallCar+"(2)" + "\nMPV Car :" + MPVCar+"(1)" );
+			System.out.print("Enter total sales\t\t:RM");
+			this.totalSales = input.nextDouble();
+			System.out.print("Enter total expenses\t\t:RM");
+			this.totalSpend = input.nextDouble();
+			
+		
 		}
-		public double calcProfit() {
-			double paysmallcar= 2 *50;
-			double payMPV = 1*80;
-			return profit = paysmallcar + payMPV;
+		public double getPayment() {
+			return profit = this.totalSales - this.totalSpend;
 		}
+	
+		public void printInfo() { // 2.2 Polymorphism
+			System.out.println("----------Financial Statement----------"
+					+ "\nMonth\t\t\t:" + "(" + this.month + ")"
+					+ "\nTotal Sales \t\t:RM" + this.totalSales
+					+ "\nTotal Expenses \t\t:RM" + this.totalSpend
+					+ "\nProfit \t\t\t:RM" + profit);
+		}
+		
 }

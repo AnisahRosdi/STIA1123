@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public abstract class carDetail extends rentalCar{ //1.3 User-defined class
+public class carDetail{ //1.3 User-defined class
 
 	 carDetail() { //1.4 Constructor with no arguments
 		

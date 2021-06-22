@@ -8,8 +8,6 @@ public class main { //1.3 User-defined class
 		
 	Scanner input = new Scanner(System.in);
 	
-	rentalCar a = new rentalCar();
-	
 		System.out.print("Enter your choice(Admin(1)/Customer(2)): ");
 		int choice= input.nextInt();
 		System.out.print("");
@@ -17,16 +15,17 @@ public class main { //1.3 User-defined class
 		if(choice == 2) {
 			
 			System.out.println("");
+			
 			advertisement b = new advertisement(0);
 			carDetail c = new carDetail();
-			customer d = new customer();
+			customer d = new Customer();
+			d.customer;
 		}	
 			else if(choice == 1) {
 				
 				employee e = new employee();
 				System.out.println("");
 				finance f = new finance(3,2);
-				f.calcProfit();
 			
 		}
 			else {
