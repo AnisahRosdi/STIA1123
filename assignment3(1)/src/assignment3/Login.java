@@ -263,7 +263,7 @@ if (txtUsername.getText().equals("Admin") && (txtPassword.getText().equals("1234
 		btnReset.setBounds(186, 353, 45, 34);
 		panel_1.add(btnReset);
 		
-		JLabel lblNewLabel_1 = new JLabel("Welcome to MyStorage");
+		JLabel lblNewLabel_1 = new JLabel("Welcome to Rental Car");
 		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setFont(new Font("Elephant", Font.PLAIN, 25));
 		lblNewLabel_1.setBounds(68, 30, 329, 29);

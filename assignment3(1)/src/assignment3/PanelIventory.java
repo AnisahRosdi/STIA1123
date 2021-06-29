@@ -53,7 +53,7 @@ public class PanelIventory extends JPanel {
 		panel_1.add(panel_2);
 		panel_2.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Small storage price per unit = RM 185");
+		JLabel lblNewLabel = new JLabel("SUV price per week = RM 185");
 		lblNewLabel.setBounds(10, 69, 326, 19);
 		panel_2.add(lblNewLabel);
 		lblNewLabel.setFont(new Font("Dialog", Font.PLAIN, 15));
@@ -68,7 +68,7 @@ public class PanelIventory extends JPanel {
 		panel_2.add(SmallUnit);
 		SmallUnit.setColumns(10);
 		
-		JLabel lblMediumStoragePrice = new JLabel("Medium storage price per unit = RM 207");
+		JLabel lblMediumStoragePrice = new JLabel("MPV price per unit = RM 207");
 		lblMediumStoragePrice.setBounds(10, 128, 326, 19);
 		panel_2.add(lblMediumStoragePrice);
 		lblMediumStoragePrice.setFont(new Font("Dialog", Font.PLAIN, 15));
@@ -83,7 +83,7 @@ public class PanelIventory extends JPanel {
 		panel_2.add(MediumUnit);
 		MediumUnit.setColumns(10);
 		
-		JLabel lblLargeStoragePrice = new JLabel("Large storage price per unit = RM 270");
+		JLabel lblLargeStoragePrice = new JLabel("Wagon price per unit = RM 270");
 		lblLargeStoragePrice.setBounds(10, 192, 326, 27);
 		panel_2.add(lblLargeStoragePrice);
 		lblLargeStoragePrice.setFont(new Font("Dialog", Font.PLAIN, 15));

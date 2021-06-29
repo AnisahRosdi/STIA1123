@@ -72,90 +72,13 @@ public class customer extends JFrame {
 		
 		
 		JPanel MainPanel = new JPanel();
-		MainPanel.setBackground(Color.GRAY);
-		MainPanel.setBounds(0, 10, 1011, 677);
+		MainPanel.setBackground(new Color(204, 153, 255));
+		MainPanel.setBounds(0, -40, 1011, 677);
 		contentPane.add(MainPanel);
 		MainPanel.setLayout(null);
 		
-		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setBounds(10, 72, 476, 585);
-		MainPanel.add(tabbedPane);
-		
-		JPanel Small = new JPanel();
-		Small.setBackground(Color.DARK_GRAY);
-		Small.setFont(new Font("Dialog", Font.PLAIN, 10));
-		Small.setToolTipText("");
-		tabbedPane.addTab("Small", null, Small, null);
-		Small.setLayout(null);
-		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(customer.class.getResource("/image/ExtraSpace_02-5x10UnitSize.gif")));
-		lblNewLabel.setBounds(10, 10, 451, 365);
-		Small.add(lblNewLabel);
-		
-		JPanel panel = new JPanel();
-		panel.setBackground(Color.LIGHT_GRAY);
-		panel.setBounds(10, 385, 451, 163);
-		Small.add(panel);
-		panel.setLayout(null);
-		
-		JTextPane txtpnsmallStorage = new JTextPane();
-		txtpnsmallStorage.setFont(new Font("Comic Sans MS", Font.BOLD, 13));
-		txtpnsmallStorage.setBackground(Color.LIGHT_GRAY);
-		txtpnsmallStorage.setText("                        -Small Storage-\r\n1. 5 x 10 (foot) storage unit can hold about a dorm room worth of items\r\n2. Price per month = $ RM 374 $\r\n3. Size: 5 x 10 (foot)\r\n4. Material: Block and Steel\r\n5. Insurent guaranteed");
-		txtpnsmallStorage.setBounds(10, 10, 431, 143);
-		panel.add(txtpnsmallStorage);
-		
-		JPanel Medium = new JPanel();
-		Medium.setBackground(Color.DARK_GRAY);
-		Medium.setFont(new Font("Dialog", Font.PLAIN, 10));
-		tabbedPane.addTab("Medium", null, Medium, null);
-		Medium.setLayout(null);
-		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(customer.class.getResource("/image/ExtraSpace_04-10x10UnitSize.gif")));
-		lblNewLabel_1.setBounds(10, 10, 451, 365);
-		Medium.add(lblNewLabel_1);
-		
-		JPanel panel_4 = new JPanel();
-		panel_4.setBackground(Color.LIGHT_GRAY);
-		panel_4.setBounds(10, 385, 451, 163);
-		Medium.add(panel_4);
-		panel_4.setLayout(null);
-		
-		JTextPane txtpnmediumStorage = new JTextPane();
-		txtpnmediumStorage.setText("                        -Medium Storage-\r\n1. 10 x 10 (foot)  storage unit can hold about a 1-2 bedroom apartment worth of items\r\n2. Price per month = $ RM 664 $\r\n3. Size: 10 x 10 (foot)\r\n4. Material: Block and Steel\r\n5. Insurent guaranteed");
-		txtpnmediumStorage.setFont(new Font("Comic Sans MS", Font.BOLD, 13));
-		txtpnmediumStorage.setBackground(Color.LIGHT_GRAY);
-		txtpnmediumStorage.setBounds(10, 10, 431, 143);
-		panel_4.add(txtpnmediumStorage);
-		
-		JPanel Large = new JPanel();
-		Large.setBackground(Color.DARK_GRAY);
-		Large.setFont(new Font("Dialog", Font.PLAIN, 10));
-		tabbedPane.addTab("Large", null, Large, null);
-		Large.setLayout(null);
-		
-		JLabel lblNewLabel_1_1 = new JLabel("");
-		lblNewLabel_1_1.setIcon(new ImageIcon(customer.class.getResource("/image/ExtraSpace_05-10x15UnitSize.gif")));
-		lblNewLabel_1_1.setBounds(10, 10, 451, 365);
-		Large.add(lblNewLabel_1_1);
-		
-		JPanel panel_5 = new JPanel();
-		panel_5.setBackground(Color.LIGHT_GRAY);
-		panel_5.setBounds(10, 385, 451, 163);
-		Large.add(panel_5);
-		panel_5.setLayout(null);
-		
-		JTextPane txtpnlargeStorage = new JTextPane();
-		txtpnlargeStorage.setText("                        -Large Storage-\r\n1. 10 x 15 (foot) storage unit can hold about a 2-3 bedroom worth of items\r\n2. Price per month = $ RM 1205 $\r\n3. Size: 10 x 15 (foot)\r\n4. Material: Concrete and Steel\r\n5. Insurent guaranteed");
-		txtpnlargeStorage.setFont(new Font("Comic Sans MS", Font.BOLD, 13));
-		txtpnlargeStorage.setBackground(Color.LIGHT_GRAY);
-		txtpnlargeStorage.setBounds(10, 10, 431, 143);
-		panel_5.add(txtpnlargeStorage);
-		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(Color.DARK_GRAY);
+		panel_1.setBackground(new Color(102, 0, 153));
 		panel_1.setBounds(10, 10, 979, 51);
 		MainPanel.add(panel_1);
 		panel_1.setLayout(null);
@@ -181,27 +104,28 @@ public class customer extends JFrame {
 		panel_1.add(lblNewLabel_8);
 		
 		JPanel panel_2 = new JPanel();
-		panel_2.setBounds(496, 88, 493, 240);
+		panel_2.setBackground(new Color(204, 153, 204));
+		panel_2.setBounds(218, 85, 493, 240);
 		MainPanel.add(panel_2);
 		panel_2.setLayout(null);
 		
-		JLabel lblNewLabel_2 = new JLabel("Choose storage size:");
+		JLabel lblNewLabel_2 = new JLabel("Choose car type:");
 		lblNewLabel_2.setFont(new Font("Dialog", Font.PLAIN, 15));
 		lblNewLabel_2.setBounds(10, 66, 147, 13);
 		panel_2.add(lblNewLabel_2);
 		
-		JRadioButton rdbtnMedium = new JRadioButton("Medium(10x10)");
+		JRadioButton rdbtnMedium = new JRadioButton("MPV");
 		
 		rdbtnMedium.setFont(new Font("Dialog", Font.PLAIN, 12));
 		rdbtnMedium.setBounds(143, 85, 130, 21);
 		panel_2.add(rdbtnMedium);
 		
-		JRadioButton rdbtnLarge = new JRadioButton("Large(10x15)");
+		JRadioButton rdbtnLarge = new JRadioButton("Wagon");
 		rdbtnLarge.setFont(new Font("Dialog", Font.PLAIN, 12));
 		rdbtnLarge.setBounds(275, 85, 103, 21);
 		panel_2.add(rdbtnLarge);
 		
-		JRadioButton rdbtnSmall = new JRadioButton("Small(5x10)");
+		JRadioButton rdbtnSmall = new JRadioButton("SUV");
 		
 		rdbtnSmall.setFont(new Font("Dialog", Font.PLAIN, 12));
 		rdbtnSmall.setBounds(25, 85, 103, 21);
@@ -242,7 +166,7 @@ public class customer extends JFrame {
 		
 		
 		
-		JLabel lblNewLabel_3 = new JLabel("Rental duration(month):");
+		JLabel lblNewLabel_3 = new JLabel("Rental duration(days):");
 		lblNewLabel_3.setFont(new Font("Dialog", Font.PLAIN, 15));
 		lblNewLabel_3.setBounds(10, 130, 158, 13);
 		panel_2.add(lblNewLabel_3);
@@ -397,12 +321,13 @@ public class customer extends JFrame {
 		panel_2.add(lblNewLabel_7);
 		
 		JPanel panel_3 = new JPanel();
-		panel_3.setBounds(496, 338, 493, 319);
+		panel_3.setBackground(new Color(204, 153, 204));
+		panel_3.setBounds(218, 330, 493, 319);
 		MainPanel.add(panel_3);
 		panel_3.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 10, 473, 212);
+		scrollPane.setBounds(10, 11, 473, 212);
 		panel_3.add(scrollPane);
 		
 		table = new JTable();
